@@ -21,6 +21,7 @@ protected:
 
 private:
 	bool m_active = false;
+	//gameStateProjectApp* m_app;
 };
 
 
@@ -29,8 +30,10 @@ public:
 	SplashState() {}
 	virtual ~SplashState() {}
 
+	virtual void onEnter();
 	virtual void onUpdate(float deltaTime);
 	virtual void onDraw();
+
 };
 
 class MenuState : public GameState {

@@ -1,4 +1,10 @@
 #include "GameState.h"
+#include "gameStateProjectApp.h"
+
+void SplashState::onEnter()
+{
+	//m_app = 
+}
 
 void SplashState::onUpdate(float deltaTime)
 {
@@ -6,7 +12,9 @@ void SplashState::onUpdate(float deltaTime)
 
 void SplashState::onDraw()
 {
+
 	//m_2dRenderer->drawText(m_font, "Press ESC to quit", 0, 0);
+	
 }
 
 void MenuState::onUpdate(float deltaTime)

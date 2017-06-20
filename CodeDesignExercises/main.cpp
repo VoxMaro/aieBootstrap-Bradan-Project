@@ -21,16 +21,32 @@ void problem() {
 
 	LinkedList<tempObj*> list; //linked list of tempObj*
 							   //tempObj has two values, num1 and num2. num1 is 1, num2 is set using constructor
-	list.pushFront(new tempObj(3));
 	
-	tempObj* i;
-	i = *(list.begin());
+	list.pushFront(new tempObj(6));
+	list.pushFront(new tempObj(5));
+	list.pushFront(new tempObj(4));
+	list.pushFront(new tempObj(3));
+	list.pushFront(new tempObj(2));
+	list.pushFront(new tempObj(1));
 
-	std::cout << i->num2 << std::endl; //works
+	//tempObj* i;
+	//i = *(list.begin());
 
-	std::cout << (*(list.begin()))->num2 << std::endl; //gives 'expression must have pointer type'
-	std::cout << (**(list.begin())).num2 << std::endl; //gives 'class "LinkedList<T>::iterator [with T=tempObj *]" has no member "num2"'
-
+	//std::cout << i->num2 << std::endl; //works
+	//list
+	for (auto iter = list.begin(); iter != ++list.end(); iter++) {
+		std::cout << (*iter)->num2 << std::endl;
+	}
+	std::cout << std::endl;
+	list.popBack();
+	
+	for (auto iter = list.begin(); iter != ++list.end(); iter++) {
+		std::cout << (*iter)->num2 << std::endl;
+		if ((*iter)->num2 == 3) {
+			list.insert(iter,new tempObj(50));
+		}
+	}
+	std::cout << std::endl;
 	system("pause");
 }
 
