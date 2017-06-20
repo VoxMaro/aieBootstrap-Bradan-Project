@@ -10,6 +10,8 @@ enum Colors {
 	DK_GREEN = 0x008000ff, CYAN = 0x00ffffff, DK_CYAN = 0x008080ff, BLUE = 0x0000ffff, DK_BLUE = 0x000080ff, WHITE = 0xffffffff, PURPLE = 0x8034f2
 };
 
+enum class GameState {SPLASH, MENU, PLAY, PAUSE};
+
 struct Comet
 {
 	bool	mAsteroidActive;	// has it been created
@@ -55,6 +57,7 @@ public:
 	virtual void shutdown();
 
 	virtual void update(float deltaTime);
+	//virtual void updateMenu()
 	virtual void draw();
 
 	void  sortAsteroids();

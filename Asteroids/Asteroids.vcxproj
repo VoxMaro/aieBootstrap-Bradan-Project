@@ -95,11 +95,6 @@
   <ItemGroup>
     <ClInclude Include="AsteroidsApp.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\bootstrap\Bootstrap.vcxproj">
-      <Project>{af59bb0b-e059-4773-83dc-728a949647da}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
