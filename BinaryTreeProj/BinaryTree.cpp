@@ -55,9 +55,14 @@ bool BinaryTree::isEmpty() const
 void BinaryTree::insert(int a_nValue)
 {
 	TreeNode* parNode = nullptr;
+
 	if (isEmpty())
 	{
 		m_pRoot = new TreeNode(a_nValue);
+	}
+	else if (find(a_nValue))
+	{
+		return;
 	}
 	else {
 		TreeNode* curNode;
