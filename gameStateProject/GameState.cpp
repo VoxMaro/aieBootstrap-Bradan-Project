@@ -1,6 +1,10 @@
 #include "GameState.h"
 #include "gameStateProjectApp.h"
 
+SplashState::SplashState(GameStateProjectApp * pApp)
+{
+}
+
 void SplashState::onEnter()
 {
 	//m_app = 
@@ -17,6 +21,10 @@ void SplashState::onDraw()
 	
 }
 
+MenuState::MenuState(const GameStateProjectApp * pApp)
+{
+}
+
 void MenuState::onUpdate(float deltaTime)
 {
 
@@ -27,6 +35,10 @@ void MenuState::onDraw()
 
 }
 
+PauseState::PauseState(GameStateProjectApp * pApp)
+{
+}
+
 void PauseState::onUpdate(float deltaTime)
 {
 }
@@ -35,10 +47,8 @@ void PauseState::onDraw()
 {
 }
 
-void PlayState::onUpdate(float deltaTime)
-{
-}
 
-void PlayState::onDraw()
-{
-}
+
+//GameState::GameState(GameStateProjectApp * pApp)
+//{
+//}

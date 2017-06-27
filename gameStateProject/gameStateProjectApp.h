@@ -25,5 +25,5 @@ protected:
 
 	aie::Renderer2D*	m_2dRenderer;
 	aie::Font*			m_font;
-	GameStateManager	m_GameStateManager;
+	GameStateManager*	m_GameStateManager;
 };
