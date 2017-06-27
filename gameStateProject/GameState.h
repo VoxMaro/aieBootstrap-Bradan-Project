@@ -4,7 +4,7 @@ class GameStateProjectApp;
 class GameState {
 	//friend class GameStateManager;
 public:
-	virtual GameState();
+	GameState(GameStateProjectApp *pApp);
 	virtual ~GameState() {}
 	bool isActive() const { return m_active; }
 

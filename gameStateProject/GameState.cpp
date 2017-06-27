@@ -1,8 +1,14 @@
 #include "GameState.h"
 #include "gameStateProjectApp.h"
 
+GameState::GameState(GameStateProjectApp * pApp)
+{
+}
+
+
 SplashState::SplashState(GameStateProjectApp * pApp)
 {
+	
 }
 
 void SplashState::onEnter()
@@ -52,3 +58,4 @@ void PauseState::onDraw()
 //GameState::GameState(GameStateProjectApp * pApp)
 //{
 //}
+
